@@ -5,95 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theo's Travels</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function openTab(evt, cityName) {
-            const tabcontents = document.querySelectorAll(".tabcontent");
-            tabcontents.forEach(tab => tab.style.display = "none");
-
-            const tablinks = document.querySelectorAll(".tabs button");
-            tablinks.forEach(tab => tab.classList.remove("active"));
-
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.classList.add("active");
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelector(".tabs button").click(); 
-        });
-    </script>
 </head>
 <body>
     <header>
         <h1>Theo's Travels</h1>
     </header>
 
-    <div class="tabs">
-        <button onclick="openTab(event, 'London')">London</button>
-        <button onclick="openTab(event, 'Costa Rica')">Costa Rica</button>
-        <button onclick="openTab(event, 'Paris')">Paris</button>
-    </div>
-
-    <div id="London" class="tabcontent">
+    <div class="destination" id="London">
         <h1>London</h1>
-        <img src="llondon bridge.jpeg" alt="Theo and family in front of london bridge">
-        <p>London is one of my favourit places to travel to. I've been there twice now and still want to go back. 
-            I love teh big city, and the architecture of the city. The overall aesthetic of the city is super fun to been in.
-        </p>
+        <img src="london tower.jpg" alt="Theo and family in front of London Bridge">
+        <p>London is one of my favorite places to travel to. I've been there twice now and still want to go back. 
+            I love the big city and the architecture. The overall aesthetic of the city is super fun to be in.</p>
         <h2>Good things to know before traveling to London</h2>
         <ul>
-            <li>Make sure to get the most up to date curance (Plastic).</li>
-            <li>Cars drive on the right hand of the road.</li>
-            <li>It's a more expenice place to travel to.</li>
-            <li>The underground is the best way to travel around london (The subway).</li>
+            <li>Make sure to get the most up-to-date currency (Plastic).</li>
+            <li>Cars drive on the left-hand side of the road.</li>
+            <li>It's a more expensive place to travel to.</li>
+            <li>The underground (subway) is the best way to travel around London.</li>
         </ul>
         <h2>Some good places to visit while in London</h2>
-        <img src="Big ben.jpeg" alt="Big ben clock tower">
+        <img src="big ben.jpg" alt="Big Ben clock tower">
         <ul>
-            <li>Tower London</li>
+            <li>Tower of London</li>
             <li>Big Ben Clock Tower</li>
-            <li>British Musium</li>
+            <li>British Museum</li>
             <li>The London Eye</li>
             <li>Buckingham Palace</li>
         </ul>
     </div>
 
-    <div id="Costa Rica" class="tabcontent">
+    <div class="destination" id="Costa Rica">
         <h1>Costa Rica</h1>
-        <img src="pool costa rica.jpeg" alt="pool in backyard in costa rica">
-        <p>I've only been to Costa Rica once but it was on of my favorite experiences. The hot weather and the beach life is something that is unmatched. every one was super nice and welcoming. 
-            <h2>Good things to know before traveling to Costa Rica</h2>
-            <ul>
-                <li>Pack for super hot weather</li>
-                <li>For parking at some locations you tip people to look after your car, so be prepard to tip people.</li>
-            </ul>
-            <img src="Costa rica beach.jpeg" alt="beach in costa rica">
-            <h2>Some good places to visit in Costa Rica</h2>
-            <ul>
-                <li>Tamarindo Beach</li>
-            </ul>
-            <p>Costa Rica is mainly just a beach vaction. if your going to travel to Costa Rica you want to want to go to the beach, do some surfing and just enjoy the sun!</p>
+        <img src="costa rica pool.jpg" alt="Pool in backyard in Costa Rica">
+        <p>I've only been to Costa Rica once, but it was one of my favorite experiences. The hot weather and beach life are unmatched. Everyone was super nice and welcoming.</p>
+        <h2>Good things to know before traveling to Costa Rica</h2>
+        <ul>
+            <li>Pack for super hot weather.</li>
+            <li>For parking at some locations, you tip people to look after your car, so be prepared to tip.</li>
+        </ul>
+        <img src="costa rica.jpg" alt="Beach in Costa Rica">
+        <h2>Some good places to visit in Costa Rica</h2>
+        <ul>
+            <li>Tamarindo Beach</li>
+        </ul>
+        <p>Costa Rica is mainly just a beach vacation. If you're going to travel to Costa Rica, you'll want to visit the beach, do some surfing, and just enjoy the sun!</p>
     </div>
 
-    <div id="Paris" class="tabcontent">
+    <div class="destination" id="Paris">
         <h1>Paris</h1>
-        <p>Paris is a very fun place to go! its a very nice city, simaler to London with the city life. 
-            people call it the city of love, so if you want a place to take that special someone paris is teh place to go.</p>
-            <img src="ifal tower.jpeg" alt="ifal tower in paris">
-            <h2>Good things to know before traveling to Paris</h2>
-            <ul>
-                <li>Tipping is not required</li>
-                <li>It's common fro attractions to be closed on Monday or Tuesday</li>
-                <li>Beware of pickpockets</li>
-            </ul>
-            <h2>Some good places to visit in Paris</h2>
-            <img src="paris.jpeg" alt="picture in paris">
-            <ul>
-                <li>Eiffel Tower</li>
-                <li>The Louvre</li>
-                <li>Walk Along the Champs-Élysées</li>
-                <li>Arc de Triomphe</li>
-                <li>Île de la Cité</li>
-            </ul>
+        <p>Paris is a very fun place to go! It's a very nice city, similar to London with city life. 
+            People call it the city of love, so if you want a place to take that special someone, Paris is the place to go.</p>
+        <img src="eefial tower.jpg" alt="Eiffel Tower in Paris">
+        <h2>Good things to know before traveling to Paris</h2>
+        <ul>
+            <li>Tipping is not required.</li>
+            <li>It's common for attractions to be closed on Monday or Tuesday.</li>
+            <li>Beware of pickpockets.</li>
+        </ul>
+        <h2>Some good places to visit in Paris</h2>
+        <img src="paris.jpg" alt="Picture in Paris">
+        <ul>
+            <li>Eiffel Tower</li>
+            <li>The Louvre</li>
+            <li>Walk Along the Champs-Élysées</li>
+            <li>Arc de Triomphe</li>
+            <li>Île de la Cité</li>
+        </ul>
     </div>
+    
+    <footer>
+        <p>&copy; 2025 Theo's Travels. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
